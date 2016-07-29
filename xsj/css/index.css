@@ -1,0 +1,259 @@
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html {
+    -ms-touch-action: none;
+}
+
+body,
+ul,
+li {
+    padding: 0;
+    margin: 0;
+
+    border: 0;
+}
+
+body {
+    overflow: hidden; /* this is important to prevent the whole page to bounce */
+
+    font-family: ubuntu, helvetica, arial;
+    font-size: 12px;
+}
+
+
+#wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    width: 100%;
+    overflow: hidden;
+
+    background: #ccc;
+}
+
+#scroller {
+    position: absolute;
+    z-index: 1;
+
+    height: 100%;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-transform: translateZ(0);
+       -moz-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+         -o-transform: translateZ(0);
+            transform: translateZ(0);
+
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-text-size-adjust: none;
+       -moz-text-size-adjust: none;
+        -ms-text-size-adjust: none;
+         -o-text-size-adjust: none;
+            text-size-adjust: none;
+    -webkit-touch-callout: none;
+}
+
+#loading_bar {
+    position: absolute;
+    z-index: 10;
+}
+.loading_bg {
+    position: fixed;
+    z-index: 7;
+
+    width: 100%;
+    height: 100%;
+
+    background: url(../images/loading.gif)center no-repeat;
+    background-color: #fff;
+    background-size: contain;
+}
+
+
+.start_video {
+    position: fixed;
+    z-index: 6;
+
+    width: 100%;
+    height: 100%;
+
+    line-height: 50;
+
+    text-align: center;
+
+    background-color: #fff;
+    background-size: contain;
+}
+
+.enter_video {
+    position: fixed;
+    z-index: 5;
+
+    width: 100%;
+    height: 100%;
+
+    background: #000;
+}
+
+.enter_box {
+    position: fixed;
+    z-index: 4;
+
+    width: 100%;
+    height: 100%;
+
+    background: url(../images/enter1.gif)center no-repeat;
+    background-color: #fff;
+    background-size: contain;
+}
+
+.enter_bg_warp {
+    position: fixed;
+    z-index: 6;
+
+    width: 100%;
+    height: 100%;
+
+    line-height: 50;
+
+    text-align: center;
+
+    background: url(../images/enter_bg.jpg)center center no-repeat;
+    background-size: contain;
+}
+
+.on {
+    background: url(../images/bg.jpg)center no-repeat;
+    background-size: contain;
+}
+
+.off {
+    background: url(../images/bg_off.jpg)center no-repeat;
+    background-size: contain;
+}
+#scroller ul {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+
+#scroller li {
+    display: block;
+    float: left;
+    width: 100px;
+    height: 100%;
+
+    font-size: 14px;
+
+    border-right: 1px solid #ccc;
+    background-color: #fafafa;
+}
+
+.npc_box {
+    position: fixed;
+    bottom: -2px;
+    left: 0;
+    z-index: 2;
+
+    background: url(../images/npc.png)center no-repeat;
+    background-size: contain;
+}
+
+.dialogue_box {
+    position: fixed;
+    bottom: 91px;
+    left: 126px;
+    z-index: 3;
+
+    width: 220px;
+
+    border: 4px solid #fcadaf;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.dialogue_text_aera {
+    padding-right: 5px;
+    padding-left: 10px;
+}
+
+.guid_play_1 {
+    position: absolute;
+}
+
+.guid_play_2 {
+    position: absolute;
+}
+
+.item_box {
+    position: absolute;
+}
+
+.popup_window {
+    position: fixed;
+    z-index: 5;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #ccc;
+    background-color: rgba(0, 0, 0, .73);
+}
+
+
+.alert_find_key {
+    background: url(../images/find_key.png)center center no-repeat;
+    background-size: contain;
+}
+
+.alert_find_xm {
+    background: url(../images/find_xm.png)center center no-repeat;
+    background-size: contain;
+}
+
+.alert_find_zb {
+    background: url(../images/find_zb.png)center center no-repeat;
+    background-size: contain;
+}
+
+.alert_need_key {
+    background: url(../images/need_key.png)center center no-repeat;
+    background-size: contain;
+}
+
+.alert_invate_friend {
+    background: url(../images/invate_friend.png)center center no-repeat;
+    background-size: contain;
+}
+
+.close_btn_win {
+    background: url(../images/close_btn.png)center center no-repeat;
+    background-size: contain;
+}
+
+.show_off {
+    display: none;
+}
+
+.video_box_1 {
+    position: absolute;
+}
+
+.video_box_2 {
+    position: absolute;
+}

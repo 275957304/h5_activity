@@ -1,0 +1,186 @@
+@-webkit-keyframes bounce-down {
+    25% {
+        -webkit-transform: translateY(-5px);
+    }
+    50%,
+    100% {
+        -webkit-transform: translateY(0);
+    }
+    75% {
+        -webkit-transform: translateY(5px);
+    }
+}
+
+@keyframes bounce-down {
+    25% {
+        transform: translateY(-5px);
+    }
+    50%,
+    100% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(5px);
+    }
+}
+
+@-webkit-keyframes paidong {
+    25% {
+        -webkit-transform: rotate(-10deg);
+    }
+    50%,
+    100% {
+        -webkit-transform: translateY(0);
+    }
+    75% {
+        -webkit-transform: rotate(10deg);
+    }
+}
+
+@keyframes paidong {
+    25% {
+        transform: rotate(-10deg);
+    }
+    50%,
+    100% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: rotate(10deg);
+    }
+}
+
+
+@-webkit-keyframes zuoyou {
+    25% {
+        -webkit-transform: translateX(0px);
+
+        opacity: 1;
+    }
+    50%,
+    100% {
+        -webkit-transform: translateX(-60px);
+
+        opacity: 0;
+    }
+}
+
+@keyframes zuoyou {
+    25% {
+        -webkit-transform: translateX(0px);
+
+        opacity: 1;
+    }
+    50%,
+    100% {
+        -webkit-transform: translateX(-60px);
+
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes daxiao {
+    25% {
+        -webkit-transform: scale(1.2);
+    }
+    50%,
+    100% {
+        -webkit-transform: scale(1);
+    }
+    75% {
+        -webkit-transform: scale(.8);
+    }
+}
+
+@keyframes daxiao {
+    25% {
+        -webkit-transform: scale(1.2);
+    }
+    50%,
+    100% {
+        -webkit-transform: scale(1);
+    }
+    75% {
+        -webkit-transform: scale(.8);
+    }
+}
+
+@-webkit-keyframes bounce-up {
+    25% {
+        -webkit-transform: translateY(5px);
+    }
+    50%,
+    100% {
+        -webkit-transform: translateY(0);
+    }
+    75% {
+        -webkit-transform: translateY(-5px);
+    }
+}
+
+@keyframes bounce-up {
+    25% {
+        transform: translateY(5px);
+    }
+    50%,
+    100% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(-5px);
+    }
+}
+
+.animate-bounce-down {
+    -webkit-animation: bounce-down 1.5s linear infinite;
+            animation: bounce-down 1.5s linear infinite;
+}
+
+.denglong_box {
+    transform-origin: 50% 0;
+    -webkit-animation: paidong 4.5s linear infinite;
+            animation: paidong 4.5s linear infinite;
+
+    background: url(../images/denglong.png)center no-repeat;
+    background-size: contain;
+}
+
+.slide_hand {
+    -webkit-animation: zuoyou 2s linear infinite;
+            animation: zuoyou 2s linear infinite;
+
+    background: url(../images/hand.png)center no-repeat;
+    background-size: contain;
+}
+
+.enter_btn {
+    -webkit-animation: daxiao 2s linear infinite;
+            animation: daxiao 2s linear infinite;
+
+    background: url(../images/enter_btn.png)center center no-repeat;
+    background-size: contain;
+}
+
+.animate-bounce-up {
+    position: relative;
+
+    margin: 0 auto;
+
+    -webkit-animation: bounce-up 1.4s linear infinite;
+            animation: bounce-up 1.4s linear infinite;
+
+    background: url(../images/arrow1.png)center no-repeat;
+    background-size: contain;
+}
+
+.addw {
+    -webkit-transition: all 1.5s cubic-bezier(.15, .37, .2, 1);
+       -moz-transition: all 1.5s cubic-bezier(.15, .37, .2, 1);
+            transition: all 1.5s cubic-bezier(.15, .37, .2, 1);
+}
+.add {
+    -webkit-transform: scale(1.5);
+       -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+            transform: scale(1.5);
+}
